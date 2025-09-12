@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "8.0.1"
+gem "rails", "8.0.2.1"
 
 gem "bootsnap"
 gem "google-cloud-discovery_engine", "<= 2.2.0"
