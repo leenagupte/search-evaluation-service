@@ -38,5 +38,10 @@ module SearchEvaluationService
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Google Discovery Engine configuration
+    config.discovery_engine_default_collection_name = ENV.fetch("DISCOVERY_ENGINE_DEFAULT_COLLECTION_NAME")
+    config.discovery_engine_default_location_name = ENV.fetch("DISCOVERY_ENGINE_DEFAULT_LOCATION_NAME")
+    config.google_cloud_project_id = ENV.fetch("GOOGLE_CLOUD_PROJECT_ID")
   end
 end
